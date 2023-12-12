@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "primeiro-projeto": {
+    "ola-mundo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/primeiro-projeto",
+            "outputPath": "dist/ola-mundo",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,12 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -62,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "primeiro-projeto:build:production"
+              "buildTarget": "ola-mundo:build:production"
             },
             "development": {
-              "buildTarget": "primeiro-projeto:build:development"
+              "buildTarget": "ola-mundo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "primeiro-projeto:build"
+            "buildTarget": "ola-mundo:build"
           }
         },
         "test": {
@@ -98,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "26675afe-6dd9-4abd-9486-72f2cca3bc21"
+    "analytics": false
   }
 }
