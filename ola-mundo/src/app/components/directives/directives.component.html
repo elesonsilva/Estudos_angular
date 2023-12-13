@@ -1,0 +1,10 @@
+
+<h2 *ngIf="canShow">testando redenreizaçção condicional</h2>
+<p *ngIf="name ==='eleson'; else nameNotFound">Olá seja bem vindo eleson</p>
+<ng-template #nameNotFound>
+<div>
+    <h3>
+        Usurio Não encontrado
+    </h3>
+</div>
+</ng-template>
